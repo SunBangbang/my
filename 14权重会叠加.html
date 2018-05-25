@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*继承样式<标签选择器<类选择器<id选择器<!important*/
+		  /*0,0,0,0   0,0,0,1   0,0,1,0   0,1,0,0   无限大*/
+		#father {              /*0,0,0,0*/
+			font-size: 100px;
+			color: red;
+		}
+		span {                /*0,0,0,1*/
+			color: green;
+		}
+		p span {             /*0,0,0,2*/
+			color: yellow;
+		}
+		.son span {           /*0,0,1,1*/
+			color: blue;
+		}
+		p.son span {          /*0,0,1,2*/
+			color: pink;
+		}
+		#father p {          /* 0,0,0,0*/
+			color: purple;
+		}
+		#father span {       /*0,1,0,1*/
+			color: grey;
+		}
+		#father .son span {   /*0,1,1,1*/
+			color: yellowgreen;
+		}
+	</style>
+</head>
+<body>
+	<div id="father">
+		<p class="son">
+			<span>什么文字呀</span>
+		</p>
+	</div>
+</body>
+</html>

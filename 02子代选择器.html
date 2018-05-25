@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	    /*子代选择器选择的元素的亲儿子，对孙子重孙子无效*/
+		.box > span {
+			color: red;
+			font-size: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<p>
+			<span>么么哒</span>
+		</p>
+		<h2>
+			<span>哈哈哈哈</span>
+		</h2>
+		<span>呵呵哒</span>
+	</div>
+</body>
+</html>

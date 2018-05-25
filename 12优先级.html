@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {                     /*0,0,0,1*/
+			font-size: 100px;
+			color: red!important;   /*无限大*/
+		}
+		.box {                    /*0,0,1,0*/
+			color: green;
+		}
+		#content {                 /* 0,1,0,0*/
+			color: blue; 
+		}
+		/*当多个样式作用于同一个（类）标签的时候，发生了样式冲突，权重高的样式优先执行。*/
+		/*默认样式<继承的样式<标签选择器<类选择器<id选择器<行内样式<!important*/
+		/*0,0,0,0    0,0,0,0  0,0,1,0  0,1,0,0  1,0,0,0    无限大*/
+	</style>
+</head>
+<body>                           <!--  行内样式  1,0,0,0 -->
+	<div class="box" id="content" style="color: orange;">呵呵哒</div>
+</body>
+</html>

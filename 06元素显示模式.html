@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div, p, h1 {
+			background-color: #ccc;
+		}
+		.father {
+			width: 500px;
+			height: 400px;
+			background-color: red;
+		}
+		.father p {
+			background-color: green;
+		}
+		h1 {
+			width: 300px;
+		}
+		a, span {
+			width: 10000px;
+			height: 100000px;
+			background-color: orange;
+			text-align: center;
+		}
+		img, input, textarea {
+			width: 300px;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+    块元素特点
+    1.独占一行
+    2.可以设置宽高，没有设置宽度，会默认父元素的宽度
+    3.没有设置高度的时候，默认高度0，高度是被内容撑开的高度
+	<div>呵呵哒</div>
+	<p>么么哒</p>
+	<h1>
+		写啥啊<br>哈哈哈哈
+	</h1>
+	<div class="father">
+		<p>什么呀</p>
+	</div>
+	行内元素
+	1.在一行上显示
+	2.不能直接设置宽高，宽高是内容撑开的
+	<br>
+	<a href="#">超链接</a>
+	<span>萌萌哒</span>
+	行内块元素
+	1.在一行上显示
+	2.可以设置宽高
+	<br>
+	<img src="images/1498978.jpg" alt="">
+	<input type="text">
+	<textarea></textarea>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div, p {
+			/*块转行内*/
+			/*display: inline;*/
+		}
+		a, span, i, img, input {
+			/*行内、行内块转块元素*/
+			/*display: block;*/
+		}
+		div, p, a, span, i {
+			/*块、行内元素转行内块元素*/
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<div>呵呵哒</div>
+	<p>萌萌哒</p>
+	<a href="#">哈哈哈</a><span>美美哒</span><i>吼吼吼</i>
+	<img src="images/v2.png" alt=""><input type="button">
+</body>
+</html>

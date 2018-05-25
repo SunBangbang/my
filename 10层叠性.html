@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	   /* 多个样式作用于同一个标签，发生权重相同的样式冲突，总是执行后边的样式，和样式调用的顺序无关*/
+		.box {
+			color: red;
+			font-size: 100px;
+		}
+		.box3 {
+			color: #fff;
+		}
+		.box2 {
+			color: green;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="box3 box box2">明天结婚穿什么颜色的西装？</div>
+</body>
+</html>
